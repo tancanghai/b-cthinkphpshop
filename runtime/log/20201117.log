@@ -1,0 +1,80 @@
+---------------------------------------------------------------
+[ 2020-11-17T18:44:45+08:00 ] 127.0.0.1 GET www.shop.com/
+[运行时间：0.024527s] [吞吐率：40.77req/s] [内存消耗：1,335.83kb] [文件加载：48]
+[ error ] [1]Class 'app\admin\controller\View' not found[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\controller\Index.php:13]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:38+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.022726s] [吞吐率：44.00req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:39+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021451s] [吞吐率：46.62req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:41+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021798s] [吞吐率：45.88req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:41+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021003s] [吞吐率：47.61req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:42+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021306s] [吞吐率：46.94req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:42+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.027265s] [吞吐率：36.68req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:46+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021484s] [吞吐率：46.55req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:47+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.020424s] [吞吐率：48.96req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:47+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021272s] [吞吐率：47.01req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:48+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.021121s] [吞吐率：47.35req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T18:56:48+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.027220s] [吞吐率：36.74req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]未定义变量: name[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:06+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.024670s] [吞吐率：40.54req/s] [内存消耗：1,452.95kb] [文件加载：51]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:07+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.020610s] [吞吐率：48.52req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:08+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.020398s] [吞吐率：49.02req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:12+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.018970s] [吞吐率：52.71req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:13+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.020090s] [吞吐率：49.78req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:13+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.024701s] [吞吐率：40.48req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:13+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.018884s] [吞吐率：52.96req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]
+---------------------------------------------------------------
+[ 2020-11-17T21:04:14+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/add.html
+[运行时间：0.023251s] [吞吐率：43.01req/s] [内存消耗：1,334.89kb] [文件加载：49]
+[ error ] [8]Array to string conversion[D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\runtime\temp\8e402cb313bb2c28c18c49aad69f3ac7.php:34]

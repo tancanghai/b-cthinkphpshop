@@ -1,0 +1,11 @@
+---------------------------------------------------------------
+[ 2020-12-08T16:57:55+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/edit.html?id=1
+[运行时间：1.869219s] [吞吐率：0.53req/s] [内存消耗：2,871.35kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107863s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1 AND a.brand_id='1' [ RunTime:0.059152s ]
+---------------------------------------------------------------
+[ 2020-12-08T16:58:34+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.159009s] [吞吐率：6.29req/s] [内存消耗：2,800.09kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010863s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.024215s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.019792s ]
