@@ -68,3 +68,15 @@
 [运行时间：0.029947s] [吞吐率：33.39req/s] [内存消耗：2,267.97kb] [文件加载：55]
 [ sql ] [ DB ] CONNECT:[ UseTime:0.001339s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
 [ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1 AND a.brand_id='2' [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2021-02-01T19:12:36+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.029599s] [吞吐率：33.78req/s] [内存消耗：2,216.80kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001612s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[ 2021-02-01T19:12:43+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.033556s] [吞吐率：29.80req/s] [内存消耗：2,216.80kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001243s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.000129s ]
