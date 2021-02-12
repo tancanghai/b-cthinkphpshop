@@ -1,0 +1,1143 @@
+---------------------------------------------------------------
+[ 2021-02-12T00:35:01+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.047682s] [吞吐率：20.97req/s] [内存消耗：2,873.14kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002502s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001241s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:35:08+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039292s] [吞吐率：25.45req/s] [内存消耗：2,937.22kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002092s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001332s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000716s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:49:52+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.032496s] [吞吐率：30.77req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000996s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000398s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:49:56+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.041003s] [吞吐率：24.39req/s] [内存消耗：3,019.82kb] [文件加载：57]
+[ error ] [2]Illegal string offset 'cate_id'[D:\phpstudy\WWW\bcthinkphpshop\runtime\temp\2ef486831655018c95d7c5612358e141.php:62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000612s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:19+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.032649s] [吞吐率：30.63req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000878s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:20+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.034178s] [吞吐率：29.26req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002212s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000423s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:22+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.046077s] [吞吐率：21.70req/s] [内存消耗：3,019.73kb] [文件加载：57]
+[ error ] [2]Illegal string offset 'cate_name'[D:\phpstudy\WWW\bcthinkphpshop\runtime\temp\2ef486831655018c95d7c5612358e141.php:62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011013s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:46+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038753s] [吞吐率：25.80req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010792s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000393s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:47+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.042943s] [吞吐率：23.29req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010872s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:49+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.037379s] [吞吐率：26.75req/s] [内存消耗：3,025.73kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000947s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001764s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:53+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.059361s] [吞吐率：16.85req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011233s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001522s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000906s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:54+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.044243s] [吞吐率：22.60req/s] [内存消耗：2,873.99kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010406s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:56+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036608s] [吞吐率：27.32req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000873s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:51:57+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.047101s] [吞吐率：21.23req/s] [内存消耗：2,873.99kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010422s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:02+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.041927s] [吞吐率：23.85req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010735s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:03+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043946s] [吞吐率：22.76req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011348s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000437s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:05+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.052911s] [吞吐率：18.90req/s] [内存消耗：3,019.70kb] [文件加载：57]
+[ error ] [2]Illegal string offset 'cate_id'[D:\phpstudy\WWW\bcthinkphpshop\runtime\temp\2ef486831655018c95d7c5612358e141.php:62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011202s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000640s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:35+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036946s] [吞吐率：27.07req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.003051s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:36+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.033662s] [吞吐率：29.71req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:40+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.037205s] [吞吐率：26.88req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011166s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:42+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.042126s] [吞吐率：23.74req/s] [内存消耗：3,019.67kb] [文件加载：57]
+[ error ] [2]Illegal string offset 'cate_id'[D:\phpstudy\WWW\bcthinkphpshop\runtime\temp\2ef486831655018c95d7c5612358e141.php:62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000932s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:53:47+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.031640s] [吞吐率：31.61req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000763s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:54:23+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036037s] [吞吐率：27.75req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001094s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001056s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:54:27+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.042914s] [吞吐率：23.30req/s] [内存消耗：3,025.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010413s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:54:32+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.042196s] [吞吐率：23.70req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:54:39+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.037914s] [吞吐率：26.38req/s] [内存消耗：2,873.96kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010436s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000570s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:54:47+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.048559s] [吞吐率：20.59req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012064s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001125s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:06+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.047172s] [吞吐率：21.20req/s] [内存消耗：2,873.96kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011532s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:08+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.047590s] [吞吐率：21.01req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011019s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:09+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.048764s] [吞吐率：20.51req/s] [内存消耗：2,873.96kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011203s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:12+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.059013s] [吞吐率：16.95req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011465s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001353s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:12+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.033793s] [吞吐率：29.59req/s] [内存消耗：2,873.96kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:15+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.045544s] [吞吐率：21.96req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011017s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000378s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:16+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.042738s] [吞吐率：23.40req/s] [内存消耗：2,873.96kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011333s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000604s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:21+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.046369s] [吞吐率：21.57req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:28+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.038551s] [吞吐率：25.94req/s] [内存消耗：2,873.96kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000792s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:55:30+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038030s] [吞吐率：26.30req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001316s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000398s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:56:15+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.045724s] [吞吐率：21.87req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010455s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:56:16+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.052205s] [吞吐率：19.16req/s] [内存消耗：3,025.62kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011588s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000763s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:56:18+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038489s] [吞吐率：25.98req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002053s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:56:19+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.041196s] [吞吐率：24.27req/s] [内存消耗：2,873.88kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000752s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:56:21+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039519s] [吞吐率：25.30req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011166s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:56:23+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.046853s] [吞吐率：21.34req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010549s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:57:38+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.047094s] [吞吐率：21.23req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011463s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:57:39+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.043780s] [吞吐率：22.84req/s] [内存消耗：3,025.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010646s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:57:44+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.033209s] [吞吐率：30.11req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000852s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:58:03+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.045871s] [吞吐率：21.80req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010361s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:58:04+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.044734s] [吞吐率：22.35req/s] [内存消耗：3,025.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010075s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000509s ]
+---------------------------------------------------------------
+[ 2021-02-12T00:58:09+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.058218s] [吞吐率：17.18req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001178s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.003350s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:01:46+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.032659s] [吞吐率：30.62req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001964s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:01:49+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.045290s] [吞吐率：22.08req/s] [内存消耗：3,019.57kb] [文件加载：57]
+[ error ] [8]未定义变量: datas[D:\phpstudy\WWW\bcthinkphpshop\runtime\temp\2ef486831655018c95d7c5612358e141.php:83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000903s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:02:03+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.032449s] [吞吐率：30.82req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000394s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:02:22+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.037689s] [吞吐率：26.53req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000966s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:02:23+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.052925s] [吞吐率：18.89req/s] [内存消耗：3,019.61kb] [文件加载：57]
+[ error ] [8]未定义数组索引: status[D:\phpstudy\WWW\bcthinkphpshop\runtime\temp\2ef486831655018c95d7c5612358e141.php:83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010193s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:02:26+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.032847s] [吞吐率：30.44req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000881s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:02:50+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.032594s] [吞吐率：30.68req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000891s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:02:52+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.049366s] [吞吐率：20.26req/s] [内存消耗：3,025.61kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011070s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:03:02+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.037574s] [吞吐率：26.61req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001410s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:03:22+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.042959s] [吞吐率：23.28req/s] [内存消耗：2,873.55kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010503s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:04:01+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.051105s] [吞吐率：19.57req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010019s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:04:02+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.039801s] [吞吐率：25.12req/s] [内存消耗：3,025.61kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:04:09+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039858s] [吞吐率：25.09req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:04:35+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.033096s] [吞吐率：30.22req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000841s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:04:35+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.049474s] [吞吐率：20.21req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010632s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:04:36+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036274s] [吞吐率：27.57req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002246s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:04+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.031750s] [吞吐率：31.50req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000831s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:05+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.044601s] [吞吐率：22.42req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010458s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:06+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038178s] [吞吐率：26.19req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:07+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.033442s] [吞吐率：29.90req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000821s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000456s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:07+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.046109s] [吞吐率：21.69req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010541s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:22+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.068404s] [吞吐率：14.62req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010981s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:27+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.040892s] [吞吐率：24.45req/s] [内存消耗：2,873.55kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.002889s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:30+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.041897s] [吞吐率：23.87req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011039s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000624s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:55+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.038663s] [吞吐率：25.86req/s] [内存消耗：2,873.55kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001006s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000702s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:05:58+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.041864s] [吞吐率：23.89req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000393s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:06:00+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.036432s] [吞吐率：27.45req/s] [内存消耗：2,873.55kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:06:02+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.049966s] [吞吐率：20.01req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010933s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:33+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.034098s] [吞吐率：29.33req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001771s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000378s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:35+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.038888s] [吞吐率：25.71req/s] [内存消耗：3,025.59kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000812s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:41+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.044043s] [吞吐率：22.71req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010923s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:42+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.046070s] [吞吐率：21.71req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010848s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:44+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039057s] [吞吐率：25.60req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.004792s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:55+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.041114s] [吞吐率：24.32req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:07:57+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.045917s] [吞吐率：21.78req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010319s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:45+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.044891s] [吞吐率：22.28req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010822s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:50+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.043270s] [吞吐率：23.11req/s] [内存消耗：3,025.59kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010108s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:53+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.040846s] [吞吐率：24.48req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010151s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000380s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:54+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.040885s] [吞吐率：24.46req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010281s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000565s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:55+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.042986s] [吞吐率：23.26req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010452s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:56+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.044375s] [吞吐率：22.54req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010649s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:08:58+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.037354s] [吞吐率：26.77req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010069s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:09:18+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039866s] [吞吐率：25.08req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010747s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:09:19+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.044218s] [吞吐率：22.62req/s] [内存消耗：3,025.59kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010824s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:09:23+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.033361s] [吞吐率：29.98req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000886s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:09:24+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.036435s] [吞吐率：27.45req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010876s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:09:25+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.034477s] [吞吐率：29.00req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:19+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038355s] [吞吐率：26.07req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011087s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:23+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.040647s] [吞吐率：24.60req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009932s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:26+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036135s] [吞吐率：27.67req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010159s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:27+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.042794s] [吞吐率：23.37req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010861s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001389s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:28+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.040844s] [吞吐率：24.48req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010658s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:29+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.044310s] [吞吐率：22.57req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011415s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:31+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.028680s] [吞吐率：34.87req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001368s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000494s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:33+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.041208s] [吞吐率：24.27req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011324s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000603s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:35+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.037399s] [吞吐率：26.74req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010103s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:37+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.042605s] [吞吐率：23.47req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010465s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:12:40+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.035878s] [吞吐率：27.87req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010959s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:02+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036648s] [吞吐率：27.29req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010570s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:07+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.046252s] [吞吐率：21.62req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011123s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000717s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:10+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038434s] [吞吐率：26.02req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010466s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:11+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=2&pid=0
+[运行时间：0.041170s] [吞吐率：24.29req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010639s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001182s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:13+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.040638s] [吞吐率：24.61req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010541s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:14+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.038050s] [吞吐率：26.28req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011308s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2021-02-12T01:13:16+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043101s] [吞吐率：23.20req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010191s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:49:40+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=3&pid=2
+[运行时间：0.759026s] [吞吐率：1.32req/s] [内存消耗：2,873.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010786s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000773s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:49:51+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.064793s] [吞吐率：15.43req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012069s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001198s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000904s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:58:51+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.051205s] [吞吐率：19.53req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:58:55+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.188364s] [吞吐率：5.31req/s] [内存消耗：3,025.71kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010228s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000535s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:07+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.303046s] [吞吐率：3.30req/s] [内存消耗：2,846.88kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011444s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.007567s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=1,`cate_name`='1',`keywords`='1',`show_nav`=1,`description`='12345',`update_time`=1613098747  WHERE  `cate_id` = 1 [ RunTime:0.059622s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:09+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.050653s] [吞吐率：19.74req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001211s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:12+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=1
+[运行时间：0.029610s] [吞吐率：33.77req/s] [内存消耗：2,873.58kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001120s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:22+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.034730s] [吞吐率：28.79req/s] [内存消耗：2,846.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.006090s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='11',`keywords`='11',`show_nav`=0,`description`='123451',`update_time`=1613098762  WHERE  `cate_id` = 1 [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:23+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.052285s] [吞吐率：19.13req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011134s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:24+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.046765s] [吞吐率：21.38req/s] [内存消耗：2,873.58kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010863s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:30+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.050151s] [吞吐率：19.94req/s] [内存消耗：2,846.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010989s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.010947s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=1,`cate_name`='11',`keywords`='11',`show_nav`=0,`description`='123451',`update_time`=1613098770  WHERE  `cate_id` = 1 [ RunTime:0.000616s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:31+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.058722s] [吞吐率：17.03req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011649s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000527s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:32+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=1
+[运行时间：0.031679s] [吞吐率：31.57req/s] [内存消耗：2,873.58kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001300s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:35+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.047743s] [吞吐率：20.95req/s] [内存消耗：2,846.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011071s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.009625s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='11',`keywords`='11',`show_nav`=0,`description`='123451',`update_time`=1613098775  WHERE  `cate_id` = 1 [ RunTime:0.000653s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:36+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.063104s] [吞吐率：15.85req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010604s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:37+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.036537s] [吞吐率：27.37req/s] [内存消耗：2,873.58kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010255s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000741s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:40+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.040620s] [吞吐率：24.62req/s] [内存消耗：2,846.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000810s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.009568s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=1,`cate_name`='11',`keywords`='11',`show_nav`=0,`description`='123451',`update_time`=1613098780  WHERE  `cate_id` = 1 [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:41+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.047481s] [吞吐率：21.06req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011024s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:42+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=1
+[运行时间：0.044722s] [吞吐率：22.36req/s] [内存消耗：2,873.58kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010183s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000570s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:45+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.049875s] [吞吐率：20.05req/s] [内存消耗：2,846.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010589s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.011728s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='11',`keywords`='11',`show_nav`=0,`description`='123451',`update_time`=1613098785  WHERE  `cate_id` = 1 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:46+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.031287s] [吞吐率：31.96req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002590s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:48+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.041559s] [吞吐率：24.06req/s] [内存消耗：2,873.58kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011278s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:50+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039223s] [吞吐率：25.50req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010741s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2021-02-12T10:59:51+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.158898s] [吞吐率：6.29req/s] [内存消耗：2,873.60kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011230s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:24:52+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036693s] [吞吐率：27.25req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:03+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038928s] [吞吐率：25.69req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011300s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:05+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.042285s] [吞吐率：23.65req/s] [内存消耗：3,025.46kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010541s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:08+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038543s] [吞吐率：25.95req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010424s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:11+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=1&pid=0
+[运行时间：0.044087s] [吞吐率：22.68req/s] [内存消耗：3,025.71kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011970s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000614s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:21+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.044993s] [吞吐率：22.23req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011537s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:22+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.043124s] [吞吐率：23.19req/s] [内存消耗：2,873.60kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010708s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:32+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.048095s] [吞吐率：20.79req/s] [内存消耗：2,801.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011762s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:35+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/delete.html
+[运行时间：0.056807s] [吞吐率：17.60req/s] [内存消耗：2,843.08kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010654s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.011626s ]
+[ sql ] [ SQL ] SELECT * FROM `tps_cate` WHERE  `pid` = 1 LIMIT 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] DELETE FROM `tps_cate`    WHERE  `cate_id` = 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:36+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.060884s] [吞吐率：16.42req/s] [内存消耗：2,801.04kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011879s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:38+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/delete.html
+[运行时间：0.058824s] [吞吐率：17.00req/s] [内存消耗：2,808.97kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010851s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.009969s ]
+[ sql ] [ SQL ] SELECT * FROM `tps_cate` WHERE  `pid` = 2 LIMIT 1 [ RunTime:0.001639s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:42+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/delete.html
+[运行时间：0.045446s] [吞吐率：22.00req/s] [内存消耗：2,843.08kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.009850s ]
+[ sql ] [ SQL ] SELECT * FROM `tps_cate` WHERE  `pid` = 3 LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] DELETE FROM `tps_cate`    WHERE  `cate_id` = 3 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:43+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039673s] [吞吐率：25.21req/s] [内存消耗：2,800.43kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010601s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:45+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/delete.html
+[运行时间：0.058138s] [吞吐率：17.20req/s] [内存消耗：2,843.08kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011357s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.009897s ]
+[ sql ] [ SQL ] SELECT * FROM `tps_cate` WHERE  `pid` = 2 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] DELETE FROM `tps_cate`    WHERE  `cate_id` = 2 [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:47+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.061206s] [吞吐率：16.34req/s] [内存消耗：2,799.23kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011401s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:25:50+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036938s] [吞吐率：27.07req/s] [内存消耗：2,799.23kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010264s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:01+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.035519s] [吞吐率：28.15req/s] [内存消耗：2,799.23kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010657s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000405s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:02+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.042566s] [吞吐率：23.49req/s] [内存消耗：2,870.98kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011447s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000637s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:18+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_add.html
+[运行时间：0.166573s] [吞吐率：6.00req/s] [内存消耗：2,775.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011167s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.006670s ]
+[ sql ] [ SQL ] INSERT INTO `tps_cate` (`pid` , `cate_name` , `keywords` , `show_nav` , `description` , `create_time` , `update_time`) VALUES (0 , '系统分类' , '系统分类' , 0 , '系统分类' , 1613100618 , 1613100618) [ RunTime:0.120039s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:19+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.049045s] [吞吐率：20.39req/s] [内存消耗：2,800.28kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010553s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:25+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=5&pid=0
+[运行时间：0.047006s] [吞吐率：21.27req/s] [内存消耗：2,871.93kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010581s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:27+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.040791s] [吞吐率：24.52req/s] [内存消耗：2,800.28kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010762s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:33+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.037019s] [吞吐率：27.01req/s] [内存消耗：2,871.95kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000870s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:51+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_add.html
+[运行时间：0.157676s] [吞吐率：6.34req/s] [内存消耗：2,775.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010508s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.006309s ]
+[ sql ] [ SQL ] INSERT INTO `tps_cate` (`pid` , `cate_name` , `keywords` , `show_nav` , `description` , `create_time` , `update_time`) VALUES (0 , '帮助分类' , '帮助分类' , 0 , '帮助分类' , 1613100650 , 1613100650) [ RunTime:0.111731s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:30:52+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.047000s] [吞吐率：21.28req/s] [内存消耗：2,800.86kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012151s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:31:03+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.035784s] [吞吐率：27.95req/s] [内存消耗：2,872.72kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002081s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000527s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:31:09+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_add.html
+[运行时间：0.044727s] [吞吐率：22.36req/s] [内存消耗：2,775.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011066s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.006517s ]
+[ sql ] [ SQL ] INSERT INTO `tps_cate` (`pid` , `cate_name` , `keywords` , `show_nav` , `description` , `create_time` , `update_time`) VALUES (0 , '网店帮助' , '网店帮助' , 0 , '网店帮助' , 1613100669 , 1613100669) [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:31:10+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038413s] [吞吐率：26.03req/s] [内存消耗：2,801.44kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010385s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:31:24+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.046142s] [吞吐率：21.67req/s] [内存消耗：2,873.45kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011381s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:31:32+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_add.html
+[运行时间：0.042470s] [吞吐率：23.55req/s] [内存消耗：2,775.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010578s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.006278s ]
+[ sql ] [ SQL ] INSERT INTO `tps_cate` (`pid` , `cate_name` , `keywords` , `show_nav` , `description` , `create_time` , `update_time`) VALUES (0 , '普通分类' , '普通分类' , 0 , '普通分类' , 1613100692 , 1613100692) [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:31:33+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038088s] [吞吐率：26.26req/s] [内存消耗：2,802.02kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011246s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:40:12+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.068077s] [吞吐率：14.69req/s] [内存消耗：2,939.13kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001237s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001298s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:41:26+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.034755s] [吞吐率：28.77req/s] [内存消耗：2,939.09kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000920s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000359s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:15+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.040880s] [吞吐率：24.46req/s] [内存消耗：2,939.17kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010784s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:17+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.029355s] [吞吐率：34.07req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001756s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000850s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000913s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:17+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036506s] [吞吐率：27.39req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011270s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000475s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:18+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.038281s] [吞吐率：26.12req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010702s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:22+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.039276s] [吞吐率：25.46req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010761s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000420s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:43+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.045281s] [吞吐率：22.08req/s] [内存消耗：2,939.17kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010401s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:47+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=5&pid=0
+[运行时间：0.050393s] [吞吐率：19.84req/s] [内存消耗：2,874.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011061s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000593s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:42:49+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.047499s] [吞吐率：21.05req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.003150s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001170s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:11+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043663s] [吞吐率：22.90req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011189s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:15+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=5&pid=0
+[运行时间：0.050411s] [吞吐率：19.84req/s] [内存消耗：3,026.35kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010583s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.001375s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:17+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.048095s] [吞吐率：20.79req/s] [内存消耗：2,847.15kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.011243s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='系统分类',`keywords`='系统分类',`show_nav`=1,`description`='系统分类',`update_time`=1613101577  WHERE  `cate_id` = 5 [ RunTime:0.000619s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:18+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043623s] [吞吐率：22.92req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010465s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000378s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:20+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=6&pid=0
+[运行时间：0.045758s] [吞吐率：21.85req/s] [内存消耗：2,874.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010845s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:22+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.045442s] [吞吐率：22.01req/s] [内存消耗：2,847.15kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000831s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.011471s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='帮助分类',`keywords`='帮助分类',`show_nav`=1,`description`='帮助分类',`update_time`=1613101582  WHERE  `cate_id` = 6 [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:24+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.049291s] [吞吐率：20.29req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011088s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.002669s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:25+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=7&pid=0
+[运行时间：0.036294s] [吞吐率：27.55req/s] [内存消耗：2,874.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:28+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.045684s] [吞吐率：21.89req/s] [内存消耗：2,847.15kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000926s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.010777s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='网店帮助',`keywords`='网店帮助',`show_nav`=1,`description`='网店帮助',`update_time`=1613101588  WHERE  `cate_id` = 7 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:29+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043617s] [吞吐率：22.93req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010751s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000389s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:31+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/edit.html?id=8&pid=0
+[运行时间：0.050025s] [吞吐率：19.99req/s] [内存消耗：2,874.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010362s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:33+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/save_cate_edit.html
+[运行时间：0.070997s] [吞吐率：14.09req/s] [内存消耗：2,847.15kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010712s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tps_cate` [ RunTime:0.006417s ]
+[ sql ] [ SQL ] UPDATE `tps_cate`  SET `pid`=0,`cate_name`='普通分类',`keywords`='普通分类',`show_nav`=1,`description`='普通分类',`update_time`=1613101593  WHERE  `cate_id` = 8 [ RunTime:0.000636s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:46:34+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.036475s] [吞吐率：27.42req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002091s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000378s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:12+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.049877s] [吞吐率：20.05req/s] [内存消耗：2,939.17kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011860s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001101s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:24+08:00 ] 127.0.0.1 GET www.shop.com/admin/cate/add.html
+[运行时间：0.052133s] [吞吐率：19.18req/s] [内存消耗：3,026.10kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012986s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000624s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:25+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.063801s] [吞吐率：15.67req/s] [内存消耗：2,802.48kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011364s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 AND a.show_nav in (1)   LIMIT 0, 10 [ RunTime:0.023174s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 AND a.show_nav in (1) [ RunTime:0.000631s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:26+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.041408s] [吞吐率：24.15req/s] [内存消耗：2,802.48kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010958s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 AND a.show_nav in (1)   LIMIT 0, 10 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 AND a.show_nav in (1) [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:29+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043937s] [吞吐率：22.76req/s] [内存消耗：2,799.69kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010896s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1 AND a.show_nav in (0)   LIMIT 0, 10 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 AND a.show_nav in (0) [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:33+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.043275s] [吞吐率：23.11req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010775s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:37+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.049599s] [吞吐率：20.16req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011462s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 50 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2021-02-12T11:49:45+08:00 ] 127.0.0.1 POST www.shop.com/admin/cate/content.html
+[运行时间：0.034783s] [吞吐率：28.75req/s] [内存消耗：2,802.14kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001148s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_cate as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_cate as a WHERE 1=1 [ RunTime:0.000400s ]

@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f9ec044-b8d5-4fba-b0d1-b3acf98f9907" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/extend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/extend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/20210107/30a4b9c33b3741ad2379cec53665dc9f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/controller/Cate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/model/CateModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/Brand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/brand/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/brand/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/common/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/common/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/cost.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/cost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/common/cost-common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/common/cost-common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210201.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/20210201.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +57,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/static/css/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/admin/model" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\model" />
+      <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\view" />
+      <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\controller" />
       <recent name="D:\phpstudy\WWW\thinkphpbcshop\public\static\css\common" />
       <recent name="D:\phpstudy\WWW\thinkphpbcshop\application\admin\common" />
-      <recent name="D:\phpstudy\WWW\thinkphpbcshop\application\admin\model" />
-      <recent name="D:\phpstudy\WWW\thinkphpbcshop\public\static\js\common" />
-      <recent name="D:\phpstudy\WWW\thinkphpbcshop\application\admin\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpstudy\WWW\thinkphpbcshop\application\admin\view\brand" />
@@ -116,10 +120,25 @@
       <workItem from="1610011719839" duration="1460000" />
       <workItem from="1610464688616" duration="25000" />
       <workItem from="1612176302622" duration="359000" />
+      <workItem from="1612404552074" duration="6705000" />
+      <workItem from="1612416881783" duration="225000" />
+      <workItem from="1613042035111" duration="20046000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

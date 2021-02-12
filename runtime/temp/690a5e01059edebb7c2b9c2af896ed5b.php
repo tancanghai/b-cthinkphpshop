@@ -1,39 +1,40 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\phpstudy\WWW\bcthinkphpshop\public/../application/admin\view\cate\list.html";i:1613060631;}*/ ?>
 <!--<div class="horizontal-space"></div>-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="well with-header with-footer" >
             <div class="header bg-blue">
-                品牌列表
+                文章栏目列表
             </div>
             <div class="buttons-preview">
-                <form id="brand_form" class="form-horizontal">
+                <form id="cate_form" class="form-horizontal">
                     <div class="form-group">
-                        <label for="brand_name" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label">名称</label>
-                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                            <input type="text" class="form-control" id="brand_name" name="brand_name">
-                        </div>
-                        <label for="brand_url" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label">官网地址</label>
+                        <label for="cate_name" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label">栏目名称</label>
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                            <input type="text" class="form-control" id="brand_url" name="brand_url">
+                            <input type="text" class="form-control" id="cate_name" name="cate_name">
                         </div>
-                        <label for="brand_description" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label">描述</label>
+                        <label for="keywords" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label">关键词</label>
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                            <input type="text" class="form-control" id="brand_description" name="brand_description">
+                            <input type="text" class="form-control" id="keywords" name="keywords">
+                        </div>
+                        <label for="description" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label">描述</label>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <input type="text" class="form-control" id="description" name="description">
                         </div>
                     </div>
 
                     <div class="form-group">
-                            <label  class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label" style="padding-top: 0px !important;">状态</label>
+                            <label  class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control-label" style="padding-top: 0px !important;">是否显示</label>
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                                 <label>
-                                    <input name="status[]" type="checkbox" class="colored-blue" value="{$Think.config.cost.BRANDSTATUSHAVE['VAL']}">
-                                    <span class="text">{$Think.config.cost.BRANDSTATUSHAVE['DESC']}</span>
+                                    <input name="show_nav[]" type="checkbox" class="colored-blue" value="<?php echo \think\Config::get('cost.SHOWNAVHAVE')['VAL']; ?>">
+                                    <span class="text"><?php echo \think\Config::get('cost.SHOWNAVHAVE')['DESC']; ?></span>
                                 </label>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                                 <label>
-                                    <input name="status[]" type="checkbox" class="colored-danger" value="{$Think.config.cost.BRANDSTATUSNONE['VAL']}">
-                                    <span class="text">{$Think.config.cost.BRANDSTATUSNONE['DESC']}</span>
+                                    <input name="show_nav[]" type="checkbox" class="colored-danger" value="<?php echo \think\Config::get('cost.SHOWNAVNONE')['VAL']; ?>">
+                                    <span class="text"><?php echo \think\Config::get('cost.SHOWNAVNONE')['DESC']; ?></span>
                                 </label>
                             </div>
                         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1  col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
@@ -44,7 +45,7 @@
                         </div>
                         <button type="button" class="btn btn-success pull-right" id="add-button">
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                            品牌添加
+                            栏目添加
                         </button>
                     </div>
 
@@ -58,16 +59,16 @@
 
     </div>
 </div>
-<script src="__STATIC__/js/common/func-common.js"></script>
+<script src="/static/js/common/func-common.js"></script>
 <script>
     $(function () {
         var obj={
             "offset" : 0,
             "num" : 10,
             "pagetouse" : true,
-            "url" : "{:url('brand/content')}",
+            "url" : "<?php echo url('cate/content'); ?>",
             "targetElem" : "#content",
-            "formElem" : "#brand_form",
+            "formElem" : "#cate_form",
             "pageCountElem" : "#page-count"
         };
         list(obj);
@@ -81,10 +82,10 @@
                 type: 2,
                 maxmin: true,
                 shadeClose: true,
-                title: '品牌添加',
+                title: '栏目添加',
                 shade: [0.4],
                 area: ['80%', '90%'],
-                content: "{:url('brand/add')}",
+                content: "<?php echo url('cate/add'); ?>",
                 cancel: function(index, layero){
                     //if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
                         layer.close(index);
@@ -95,31 +96,11 @@
             });
         });
 
-        $(document).off("click","#brand-edit").on("click","#brand-edit",function (event) {
-            let id = $(this).closest("tr").data("id");
-            layer.open({
-                type: 2,
-                maxmin: true,
-                shadeClose: true,
-                title: '品牌编辑',
-                shade: [0.4],
-                area: ['80%', '90%'],
-                content: "{:url('brand/edit')}?id="+id,
-                cancel: function(index, layero){
-                    //if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
-                    layer.close(index);
-                    window.list(obj);
-                    // }
-                    return false;
-                }
-            });
-        });
-
-        $(document).off("click","#brand-delete").on("click","#brand-delete",function (event) {
+        $(document).off("click","#cate-delete").on("click","#cate-delete",function (event) {
             let id = $(this).closest("tr").data("id");
             layer.confirm('确认删除?', {icon: 3, title:'提示'}, function(index){
                 layer.close(index);
-                $.post("{:url('brand/delete')}", {"id":id}, function (callback) {
+                $.post("<?php echo url('cate/delete'); ?>", {"id":id}, function (callback) {
                     if (callback.status == 1) {
                         layer.msg(callback.msg, {
                             icon: 1,
@@ -131,6 +112,27 @@
                         layer.msg(callback.msg, {time: 1000,icon: 2});
                     }
                 }, "json");
+            });
+        });
+
+        $(document).off("click","#cate-edit").on("click","#cate-edit",function (event) {
+            let id = $(this).closest("tr").data("id");
+            let pid = $(this).closest("tr").data("pid");
+            layer.open({
+                type: 2,
+                maxmin: true,
+                shadeClose: true,
+                title: '品牌编辑',
+                shade: [0.4],
+                area: ['80%', '90%'],
+                content: "<?php echo url('cate/edit'); ?>?id="+id+"&pid="+pid,
+                cancel: function(index, layero){
+                    //if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
+                    layer.close(index);
+                    window.list(obj);
+                    // }
+                    return false;
+                }
             });
         });
 

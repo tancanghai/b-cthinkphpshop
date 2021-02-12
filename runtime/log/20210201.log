@@ -68,3 +68,49 @@
 [运行时间：0.029947s] [吞吐率：33.39req/s] [内存消耗：2,267.97kb] [文件加载：55]
 [ sql ] [ DB ] CONNECT:[ UseTime:0.001339s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
 [ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1 AND a.brand_id='2' [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:40:02+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.223907s] [吞吐率：4.47req/s] [内存消耗：2,963.03kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006941s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.070344s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:40:08+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.057616s] [吞吐率：17.36req/s] [内存消耗：2,818.62kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012597s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 50, 10 [ RunTime:0.001044s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.000812s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:40:10+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.058293s] [吞吐率：17.15req/s] [内存消耗：2,820.49kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010838s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 40, 10 [ RunTime:0.001373s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.000814s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:40:12+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.055269s] [吞吐率：18.09req/s] [内存消耗：2,820.40kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010733s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 20, 10 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:50:48+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.106167s] [吞吐率：9.42req/s] [内存消耗：2,820.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018771s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001787s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.001291s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:50:51+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/edit.html?id=1
+[运行时间：0.170589s] [吞吐率：5.86req/s] [内存消耗：3,050.80kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005109s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1 AND a.brand_id='1' [ RunTime:0.002440s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:50:59+08:00 ] 127.0.0.1 GET www.shop.com/admin/brand/edit.html?id=1
+[运行时间：0.038668s] [吞吐率：25.86req/s] [内存消耗：2,890.73kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1 AND a.brand_id='1' [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2021-02-01T20:51:00+08:00 ] 127.0.0.1 POST www.shop.com/admin/brand/content.html
+[运行时间：0.042321s] [吞吐率：23.63req/s] [内存消耗：2,820.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;port=3306;dbname=shop;charset=utf8
+[ sql ] [ SQL ] select a.* FROM  tps_brand as a WHERE 1=1   LIMIT 0, 10 [ RunTime:0.001392s ]
+[ sql ] [ SQL ] select count(1) as count FROM  tps_brand as a WHERE 1=1 [ RunTime:0.001282s ]
