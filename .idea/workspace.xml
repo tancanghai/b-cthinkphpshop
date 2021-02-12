@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f9ec044-b8d5-4fba-b0d1-b3acf98f9907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Cate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/model/CateModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Brand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/brand/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/brand/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/common/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/common/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/extra/cost.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/cost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/common/cost-common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/common/cost-common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210201.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/20210201.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201117.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201204.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201206.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201207.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201208.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201209.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201210.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201211.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201214.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201215.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20201216.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210105.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210107.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210112.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210201.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210204.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210211.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/20210212.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +133,7 @@
       <workItem from="1612176302622" duration="359000" />
       <workItem from="1612404552074" duration="6705000" />
       <workItem from="1612416881783" duration="225000" />
-      <workItem from="1613042035111" duration="20046000" />
+      <workItem from="1613042035111" duration="20807000" />
     </task>
     <servers />
   </component>
