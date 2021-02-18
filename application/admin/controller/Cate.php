@@ -28,6 +28,8 @@ class Cate extends Controller
             $data = input('post.');
             $datas = $this->model->get_content($data["param_data"],$data["offset"],$data["num"]);
             $counts = $this->model->get_content_count($data["param_data"]);
+            $listTree=new \app\admin\common\ListTree();
+            $datas=$listTree->catetree($datas,"cate_id");
             return $this->fetch("content",[
                 "datas"=>$datas,
                 "count"=>$counts[0]["count"]

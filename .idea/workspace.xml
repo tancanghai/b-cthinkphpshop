@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f9ec044-b8d5-4fba-b0d1-b3acf98f9907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/runtime/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/admin/common/ListTree.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201117.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201204.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201206.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201207.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201208.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201209.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201210.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201211.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201214.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201215.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20201216.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210105.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210112.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210201.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210204.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210211.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/20210212.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Cate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Cate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/a95675d3871cdc90d642309771137690.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/a95675d3871cdc90d642309771137690.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,18 +52,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/admin/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/admin/common" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\common" />
       <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\model" />
       <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\view" />
       <recent name="D:\phpstudy\WWW\bcthinkphpshop\application\admin\controller" />
       <recent name="D:\phpstudy\WWW\thinkphpbcshop\public\static\css\common" />
-      <recent name="D:\phpstudy\WWW\thinkphpbcshop\application\admin\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpstudy\WWW\thinkphpbcshop\application\admin\view\brand" />
@@ -133,7 +117,7 @@
       <workItem from="1612176302622" duration="359000" />
       <workItem from="1612404552074" duration="6705000" />
       <workItem from="1612416881783" duration="225000" />
-      <workItem from="1613042035111" duration="20807000" />
+      <workItem from="1613042035111" duration="28107000" />
     </task>
     <servers />
   </component>
