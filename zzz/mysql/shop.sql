@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost_3306
+ Source Server         : localhost
  Source Server Type    : MySQL
  Source Server Version : 50553
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 12/01/2021 23:46:13
+ Date: 19/02/2021 07:57:56
 */
 
 SET NAMES utf8mb4;
@@ -62,7 +62,7 @@ CREATE TABLE `tps_brand`  (
 -- ----------------------------
 -- Records of tps_brand
 -- ----------------------------
-INSERT INTO `tps_brand` VALUES (2, '1', 'www.shop.com', 'a:1:{i:0;s:54:\"/uploads/20210107\\30a4b9c33b3741ad2379cec53665dc9f.jpg\";}', 'PINaoaido', NULL, 1, 1609989308, 1609989308);
+INSERT INTO `tps_brand` VALUES (2, '1', 'www.shop.com', 'a:0:{}', 'PINaoaido', NULL, 1, 1609989308, 1609989308);
 
 -- ----------------------------
 -- Table structure for tps_cate
@@ -70,8 +70,7 @@ INSERT INTO `tps_brand` VALUES (2, '1', 'www.shop.com', 'a:1:{i:0;s:54:\"/upload
 DROP TABLE IF EXISTS `tps_cate`;
 CREATE TABLE `tps_cate`  (
   `cate_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '栏目ID',
-  `cate_name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '栏目名称',
-  `cate_type` tinyint(1) NOT NULL DEFAULT 5 COMMENT '栏目类型1.系统分类2.帮助分类3.网店帮助4.普通分类',
+  `cate_name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '栏目名称：1.系统分类2.帮助分类3.网店帮助4.普通分类',
   `keywords` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '关键词',
   `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '描述',
   `show_nav` tinyint(1) UNSIGNED ZEROFILL NOT NULL DEFAULT 1 COMMENT '是否显示到表行栏1是0否',
@@ -80,6 +79,15 @@ CREATE TABLE `tps_cate`  (
   `create_time` int(10) DEFAULT NULL,
   `update_time` int(10) DEFAULT NULL,
   PRIMARY KEY (`cate_id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tps_cate
+-- ----------------------------
+INSERT INTO `tps_cate` VALUES (5, '系统分类', '系统分类', '系统分类', 1, NULL, 0, 1613100618, 1613101577);
+INSERT INTO `tps_cate` VALUES (6, '帮助分类', '帮助分类', '帮助分类', 1, NULL, 0, 1613100650, 1613101582);
+INSERT INTO `tps_cate` VALUES (7, '网店帮助', '网店帮助', '网店帮助', 1, NULL, 0, 1613100669, 1613101588);
+INSERT INTO `tps_cate` VALUES (8, '普通分类', '普通分类', '普通分类', 1, NULL, 0, 1613100692, 1613101593);
+INSERT INTO `tps_cate` VALUES (9, '系统子分类1', '系统子分类1关键词', 'miaoshu', 1, NULL, 5, 1613123938, 1613123938);
 
 SET FOREIGN_KEY_CHECKS = 1;
