@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:112:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\public/../application/admin\view\brand\list.html";i:1608044274;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:112:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\public/../application/admin\view\brand\list.html";i:1613693134;}*/ ?>
 <!--<div class="horizontal-space"></div>-->
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -102,7 +102,7 @@
                 type: 2,
                 maxmin: true,
                 shadeClose: true,
-                title: '品牌添加',
+                title: '品牌编辑',
                 shade: [0.4],
                 area: ['80%', '90%'],
                 content: "<?php echo url('brand/edit'); ?>?id="+id,

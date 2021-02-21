@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:113:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\public/../application/admin\view\index\index.html";i:1605610296;s:103:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\base.html";i:1606744032;s:105:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\header.html";i:1607246384;s:105:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\navbar.html";i:1602203872;s:106:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\sidebar.html";i:1606747014;s:106:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\chatbar.html";i:1602203872;s:110:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\page-header.html";i:1603592952;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:113:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\public/../application/admin\view\index\index.html";i:1605610296;s:103:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\base.html";i:1606744032;s:105:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\header.html";i:1607246384;s:105:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\navbar.html";i:1602203872;s:106:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\sidebar.html";i:1613730429;s:106:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\chatbar.html";i:1602203872;s:110:"D:\PhpStudy\phpstudy_install_dir\PHPTutorial\WWW\thinkphpbcshop\application\admin\view\common\page-header.html";i:1603592952;}*/ ?>
 
     <!DOCTYPE html>
 <!--
@@ -482,6 +482,28 @@ Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB0
                 <li>
                     <a href="javascript:void(0)">
                         <span class="menu-text">商品回收站</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--UI 文章管理-->
+        <li>
+            <a href="javascript:void(0)" class="menu-dropdown">
+                <i class="menu-icon fa fa-cubes"></i>
+                <span class="menu-text"> 文章管理 </span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="javascript:void(0)" data-load-href="<?php echo url('cate/lists'); ?>">
+                        <i class="menu-icon fa fa-rocket"></i>
+                        <span class="menu-text">文章栏目</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" data-load-href="<?php echo url('article/lists'); ?>">
+                        <i class="menu-icon fa fa-rocket"></i>
+                        <span class="menu-text">文章管理</span>
                     </a>
                 </li>
             </ul>

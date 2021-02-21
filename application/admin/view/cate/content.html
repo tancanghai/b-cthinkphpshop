@@ -17,7 +17,7 @@
     {foreach name="datas" item="v" key="k" }
     <tr data-id="{$v.cate_id}" data-pid="{$v.pid}">
         <td>{++$k}</td>
-        <td>{$v.cate_name}</td>
+        <td><?php echo str_repeat("---- ",$v["level"]);?> {$v.cate_name}</td>
         <td>{$v.keywords}</td>
         <td>{$v.description}</td>
         <td>{if condition="($v.show_nav == $Think.config.cost.SHOWNAVHAVE['VAL'])"} {$Think.config.cost.SHOWNAVHAVE['DESC']}{else /}{$Think.config.cost.SHOWNAVNONE['DESC']}{/if}</td>

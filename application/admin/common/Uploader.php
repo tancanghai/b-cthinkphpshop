@@ -1,5 +1,5 @@
 <?php
-
+//图片上传
 namespace app\admin\common;
 
 use app\admin\model\CommonModel;

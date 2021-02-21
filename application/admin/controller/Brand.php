@@ -134,6 +134,7 @@ class Brand extends Controller
     public function brand_edit_upload_img()
     {
         $uploader=new \app\admin\common\Uploader();
+        $data = input('post.');
         $bool=$uploader->upload_img("tps_brand", "brand_img", "brand_id");
         if($bool){
             return json(['status' => 1, 'msg' => '保存成功']);

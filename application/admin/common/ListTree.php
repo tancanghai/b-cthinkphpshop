@@ -1,6 +1,7 @@
 <?php
 
 namespace app\admin\common;
+//类别排序
 class ListTree
 {
     public function catetree($cateRes, $idString)

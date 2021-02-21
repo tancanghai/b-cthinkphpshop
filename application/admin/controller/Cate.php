@@ -5,7 +5,6 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Config;
 use app\admin\model\CateModel;
-use app\admin\model\CommonModel;
 
 class Cate extends Controller
 {
