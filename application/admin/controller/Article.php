@@ -11,7 +11,7 @@ use app\admin\common\Uploader;
 class Article extends Controller
 {
     public function _initialize()
-    {
+    {//
         $model = new ArticleModel;
         $this->model = $model;
     }
