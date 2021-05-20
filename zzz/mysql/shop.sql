@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost
+ Source Server         : localhost_3306
  Source Server Type    : MySQL
  Source Server Version : 50553
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 19/02/2021 07:57:56
+ Date: 21/05/2021 00:54:29
 */
 
 SET NAMES utf8mb4;
@@ -22,16 +22,17 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `tps_article`;
 CREATE TABLE `tps_article`  (
-  `article_id` int(10) NOT NULL COMMENT '文章id',
+  `article_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '文章id',
   `cate_id` smallint(10) NOT NULL COMMENT '栏目ID',
   `title` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '标题',
   `author` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '作者',
   `keywords` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '关键词',
   `description` varchar(150) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '描述',
-  `email` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '邮箱',
+  `email` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '邮箱',
   `link_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '跳转链接',
   `thumb` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '缩略图',
   `content` text CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '内容',
+  `content_img` text CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '文章内容图片',
   `show_top` tinyint(1) NOT NULL DEFAULT 0 COMMENT '是否置顶',
   `show_status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '是否显示',
   `create_time` int(10) DEFAULT NULL,
@@ -39,7 +40,12 @@ CREATE TABLE `tps_article`  (
   PRIMARY KEY (`article_id`) USING BTREE,
   INDEX `title`(`title`) USING BTREE,
   INDEX `keywords`(`keywords`) USING BTREE
-) ENGINE = MyISAM CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of tps_article
+-- ----------------------------
+INSERT INTO `tps_article` VALUES (4, 7, '系统分类文章11', '系统分类文章11', '系统分类文章11', 'miaoshu', '1131534180@qq.com', 'www.11.com', NULL, '<p><img src=\"/ueditor/php/upload/image/20210521/1621527491151545.jpg\" title=\"1621527491151545.jpg\" alt=\"u=2300045227,4159267224&amp;fm=26&amp;gp=0.jpg\"/>ghfghdfhdf</p>', '[\"\\/ueditor\\/php\\/upload\\/image\\/20210521\\/1621527491151545.jpg\"]', 0, 1, 1621527482, 1621527498);
 
 -- ----------------------------
 -- Table structure for tps_brand
@@ -62,7 +68,7 @@ CREATE TABLE `tps_brand`  (
 -- ----------------------------
 -- Records of tps_brand
 -- ----------------------------
-INSERT INTO `tps_brand` VALUES (2, '1', 'www.shop.com', 'a:0:{}', 'PINaoaido', NULL, 1, 1609989308, 1609989308);
+INSERT INTO `tps_brand` VALUES (2, '1', 'www.shop.com', 'a:1:{i:0;s:54:\"/uploads/20210520\\89ed8d64659908083de8c04909d4ec8b.jpg\";}', 'PINaoaido', NULL, 1, 1609989308, 1621512804);
 
 -- ----------------------------
 -- Table structure for tps_cate
@@ -79,15 +85,16 @@ CREATE TABLE `tps_cate`  (
   `create_time` int(10) DEFAULT NULL,
   `update_time` int(10) DEFAULT NULL,
   PRIMARY KEY (`cate_id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tps_cate
 -- ----------------------------
-INSERT INTO `tps_cate` VALUES (5, '系统分类', '系统分类', '系统分类', 1, NULL, 0, 1613100618, 1613101577);
+INSERT INTO `tps_cate` VALUES (5, '系统分类', '系统分类', '系统分类1', 1, NULL, 0, 1613100618, 1613819223);
 INSERT INTO `tps_cate` VALUES (6, '帮助分类', '帮助分类', '帮助分类', 1, NULL, 0, 1613100650, 1613101582);
 INSERT INTO `tps_cate` VALUES (7, '网店帮助', '网店帮助', '网店帮助', 1, NULL, 0, 1613100669, 1613101588);
 INSERT INTO `tps_cate` VALUES (8, '普通分类', '普通分类', '普通分类', 1, NULL, 0, 1613100692, 1613101593);
 INSERT INTO `tps_cate` VALUES (9, '系统子分类1', '系统子分类1关键词', 'miaoshu', 1, NULL, 5, 1613123938, 1613123938);
+INSERT INTO `tps_cate` VALUES (10, '系统子分类11', '系统子分类11', '描述', 1, NULL, 9, 1613698081, 1613698081);
 
 SET FOREIGN_KEY_CHECKS = 1;
