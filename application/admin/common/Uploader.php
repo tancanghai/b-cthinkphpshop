@@ -6,7 +6,8 @@ use app\admin\model\CommonModel;
 
 class Uploader
 {
-    function __construct() {
+    function __construct()
+    {
         $model = new CommonModel;
         $this->model = $model;
     }
@@ -27,7 +28,9 @@ class Uploader
                     $id_Data = $this->model->get_id_data($tableName, $key_id, $idFieldName);
                     $brand_img = $id_Data[$imgFieldName];
                     if (!empty($brand_img)) {
-                        $brand_img = preg_replace_callback( '!s:(\d+):"(.*?)";!s', function($r){ return 's:'.strlen($r[2]).':"'.$r[2].'";'; }, $brand_img );
+                        $brand_img = preg_replace_callback('!s:(\d+):"(.*?)";!s', function ($r) {
+                            return 's:' . strlen($r[2]) . ':"' . $r[2] . '";';
+                        }, $brand_img);
                         $arrImg = unserialize($brand_img);
                         array_push($arrImg, $imgPath);
                     } else {
@@ -50,8 +53,40 @@ class Uploader
         }
     }
 
+    /**
+     * 保存ueditor上传的图片地址到对应的数据表json字段中
+     * @param $tableName 表名
+     * @param $imgFieldName 图片字段名
+     * @param $idFieldName id字段名
+     * @param $idFieldValue id值
+     * @param $file_url  图片地址
+     * @return bool
+     */
+    public function save_ueditor_upload_img($tableName, $imgFieldName, $idFieldName, $idFieldValue, $file_url)
+    {
+        $id_Data = $this->model->get_id_data($tableName, $idFieldValue, $idFieldName);
+        $brand_img = $id_Data[$imgFieldName];
+        if (!empty($brand_img)) {
+            $arrImg = json_decode($brand_img, true);
+            array_push($arrImg, $file_url);
+        } else {
+            $arrImg = [$file_url];
+        }
+        $res = $this->model->update_id_data($tableName, [$imgFieldName => json_encode($arrImg), $idFieldName => $idFieldValue]);
+        if ($res) {
+            return true;
+        } else {
+            unset($info); //一定要unset之后才能进行删除操作，否则请求会被拒绝
+            $this->removeFile($file_url); //删除上传失败文件
+            return false;
+        }
+    }
+
     //删除文件
-    public function removeFile($path){
+    public function removeFile($path)
+    {
         unlink('.' . $path);
     }
+
+
 }
