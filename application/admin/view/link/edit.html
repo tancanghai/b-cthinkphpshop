@@ -1,0 +1,149 @@
+{include file="common/header" /}
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="widget">
+        <div class="widget-header bordered-bottom bordered-lightred">
+            <span class="widget-caption">Horizontal Form</span>
+        </div>
+        <div class="widget-body">
+            <div id="horizontal-form">
+                <form id="togglingForm" class="form-horizontal" role="form" enctype="multipart/form-data"  method="post">
+                    <div class="form-group">
+                        <label for="pid" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">上级栏目</label>
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <select id="pid" style="width:100%;" name="pid">
+                                <option value="0" />空分类
+                                {foreach name="cate_datas" item="v" key="k" }
+                                <option  value="{$v['cate_id']}" {if condition="($v == $cate_p)"}selected{/if}/>{$v['cate_name']}
+                                {/foreach}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cate_name" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">栏目名称</label>
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <input type="text" class="form-control" id="cate_name" placeholder="栏目名称" name="cate_name" value="{$cate_data.cate_name}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keywords" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">关键词</label>
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <input type="text" class="form-control" id="keywords" placeholder="关键词" name="keywords" value="{$cate_data.keywords}">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right" style="padding-top: 0px !important;">是否显示</label>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>
+                                <input name="show_nav" type="radio" class="colored-blue" value="{$Think.config.cost.SHOWNAVHAVE['VAL']}" {if condition="($cate_data.show_nav == $Think.config.cost.SHOWNAVHAVE['VAL'])"} checked="checked" {/if}>
+                                <span class="text">{$Think.config.cost.SHOWNAVHAVE['DESC']}</span>
+                            </label>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>
+                                <input name="show_nav" type="radio" class="colored-danger" value="{$Think.config.cost.SHOWNAVNONE['VAL']}" {if condition="($cate_data.show_nav == $Think.config.cost.SHOWNAVNONE['VAL'])"} checked="checked" {/if}>
+                                <span class="text">{$Think.config.cost.SHOWNAVNONE['DESC']}</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">描述</label>
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <textarea class="form-control" rows="3" placeholder="描述" name="description">{$cate_data.description}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2  col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                            <button id="submit" class="btn btn-blue">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/validation/bootstrapvalidator.js"></script>
+<!--Basic Scripts-->
+<script src="__STATIC__/js/jquery.serializejson.min.js" type="text/javascript" ></script>
+<script src="__STATIC__/js/bootstrap.min.js"></script>
+<script src="__STATIC__/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__STATIC__/js/beyond.min.js"></script>
+<script src="__STATIC__/js/common/cost-common.js"></script>
+<script>
+    $(function () {
+        layui.use(['layer', 'form',"laydate"], function(){
+            var layer = layui.layer;
+            var form = layui.form;
+            var laydate = layui.laydate;
+        });
+        $('#togglingForm').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                cate_name: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The cate_name is required'
+                        },
+                    }
+                },
+                keywords: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The keywords is required'
+                        },
+                    }
+                },
+                description: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The description is required'
+                        },
+                    }
+                },
+            }
+        });
+
+        // $("#togglingForm").submit(function(ev){ev.preventDefault();});
+        $("#submit").on("click", function(){
+            let bootstrapValidator = $("#togglingForm").data('bootstrapValidator');
+            bootstrapValidator.validate();
+            if(bootstrapValidator.isValid()){
+                let thisData= $("#togglingForm").serializeJSON();
+                let id = "{$cate_data.cate_id}";
+                $.post("{:url('cate/save_cate_edit')}", {"data":thisData,"id":id}, function (callback) {
+                    if (callback.status == 1) {
+                        layer.msg(callback.msg, {
+                            icon: 1,
+                            time: 1000
+                        }, function(){
+                            var indexs = parent.layer.getFrameIndex(window.name);//关闭当前iframe
+                            parent.layer.close(indexs);
+                            var obj={
+                                "offset" : 0,
+                                "num" : 10,
+                                "pagetouse" : true,
+                                "url" : "{:url('cate/content')}",
+                                "targetElem" : "#content",
+                                "formElem" : "#cate_form",
+                                "pageCountElem" : "#page-count"
+                            };
+                            parent.list(obj);
+                        });
+                    }else{
+                        layer.msg(callback.msg, {time: 1000,icon: 2});
+                    }
+                }, "json");
+            }
+        });
+
+    });
+</script>
