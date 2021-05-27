@@ -15,14 +15,14 @@
                             <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right" style="padding-top: 0px !important;">是否使用</label>
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                                 <label>
-                                    <input name="status" type="radio" class="colored-blue" value="1" checked="checked">
-                                    <span class="text"><?php echo getStatusText("cost","LINKSTATUS",1) ?></span>
+                                    <input name="status" type="radio" class="colored-blue" value="2" checked="checked">
+                                    <span class="text"><?php echo getStatusText("cost","LINKSTATUS",2) ?></span>
                                 </label>
                             </div>
                             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                                 <label>
-                                    <input name="status" type="radio" class="colored-danger" value="0">
-                                    <span class="text"><?php echo getStatusText("cost","LINKSTATUS",0) ?></span>
+                                    <input name="status" type="radio" class="colored-danger" value="1">
+                                    <span class="text"><?php echo getStatusText("cost","LINKSTATUS",1) ?></span>
                                 </label>
                             </div>
                     </div>
@@ -121,7 +121,6 @@
 
         $(document).off("click","#link-edit").on("click","#link-edit",function (event) {
             let id = $(this).closest("tr").data("id");
-            let pid = $(this).closest("tr").data("pid");
             layer.open({
                 type: 2,
                 maxmin: true,
@@ -129,7 +128,7 @@
                 title: '友情链接编辑',
                 shade: [0.4],
                 area: ['80%', '90%'],
-                content: "{:url('link/edit')}?id="+id+"&pid="+pid,
+                content: "{:url('link/edit')}?id="+id,
                 cancel: function(index, layero){
                     //if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
                     layer.close(index);

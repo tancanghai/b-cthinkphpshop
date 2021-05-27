@@ -8,41 +8,46 @@
             <div id="horizontal-form">
                 <form id="togglingForm" class="form-horizontal" role="form" enctype="multipart/form-data"  method="post">
                     <div class="form-group">
-                        <label for="pid" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">上级栏目</label>
+                        <label for="title" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">标题</label>
                         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                            <select id="pid" style="width:100%;" name="pid">
-                                <option value="0" />空分类
-                                {foreach name="cate_data" item="v" key="k" }
-                                <option value="{$v.cate_id}" />{$v.cate_name}
-                                {/foreach}
-                            </select>
+                            <input type="text" class="form-control" id="title" placeholder="标题" name="title">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="cate_name" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">栏目名称</label>
+                        <label for="link_url" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">链接地址</label>
                         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                            <input type="text" class="form-control" id="cate_name" placeholder="栏目名称" name="cate_name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="keywords" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">关键词</label>
-                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                            <input type="text" class="form-control" id="keywords" placeholder="关键词" name="keywords">
+                            <input type="text" class="form-control" id="link_url" placeholder="链接地址" name="link_url">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right" style="padding-top: 0px !important;">是否显示</label>
+                        <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right" style="padding-top: 0px !important;">类别</label>
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                             <label>
-                                <input name="show_nav" type="radio" class="colored-blue" value="{$Think.config.cost.SHOWNAVHAVE['VAL']}" checked="checked">
-                                <span class="text">{$Think.config.cost.SHOWNAVHAVE['DESC']}</span>
+                                <input name="type" type="radio" class="colored-blue" value="1" checked="checked">
+                                <span class="text">{$Think.config.cost.LINKTYPE[1]}</span>
                             </label>
                         </div>
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                             <label>
-                                <input name="show_nav" type="radio" class="colored-danger" value="{$Think.config.cost.SHOWNAVNONE['VAL']}">
-                                <span class="text">{$Think.config.cost.SHOWNAVNONE['DESC']}</span>
+                                <input name="type" type="radio" class="colored-danger" value="2">
+                                <span class="text">{$Think.config.cost.LINKTYPE[2]}</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right" style="padding-top: 0px !important;">状态</label>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>
+                                <input name="status" type="radio" class="colored-blue" value="2" checked="checked">
+                                <span class="text">{$Think.config.cost.LINKSTATUS[2]}</span>
+                            </label>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>
+                                <input name="status" type="radio" class="colored-danger" value="1">
+                                <span class="text">{$Think.config.cost.LINKSTATUS[1]}</span>
                             </label>
                         </div>
                     </div>
@@ -72,13 +77,10 @@
 
 <!--Beyond Scripts-->
 <script src="__STATIC__/js/beyond.min.js"></script>
-<script src="__STATIC__/js/common/cost-common.js"></script>
 <script>
     $(function () {
         layui.use(['layer', 'form',"laydate"], function(){
             var layer = layui.layer;
-            var form = layui.form;
-            var laydate = layui.laydate;
         });
         $('#togglingForm').bootstrapValidator({
             message: 'This value is not valid',
@@ -88,17 +90,21 @@
                 validating: 'glyphicon glyphicon-refresh'
             },
             fields: {
-                cate_name: {
+                title: {
                     validators: {
                         notEmpty: {
-                            message: 'The cate_name is required'
+                            message: 'The title is required'
                         },
                     }
                 },
-                keywords: {
+                link_url: {
                     validators: {
                         notEmpty: {
-                            message: 'The keywords is required'
+                            message: 'The link_url is required'
+                        },
+                        regexp: {
+                            regexp:  /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/,
+                            message: 'The link_url Non conformity'
                         },
                     }
                 },
@@ -112,13 +118,12 @@
             }
         });
 
-        // $("#togglingForm").submit(function(ev){ev.preventDefault();});
         $("#submit").on("click", function(){
             let bootstrapValidator = $("#togglingForm").data('bootstrapValidator');
             bootstrapValidator.validate();
             if(bootstrapValidator.isValid()){
                 let thisData= $("#togglingForm").serializeJSON();
-                $.post("{:url('cate/save_cate_add')}", thisData, function (callback) {
+                $.post("{:url('link/save_link_add')}", thisData, function (callback) {
                     if (callback.status == 1) {
                         layer.msg(callback.msg, {
                             icon: 1,
@@ -130,9 +135,9 @@
                                 "offset" : 0,
                                 "num" : 10,
                                 "pagetouse" : true,
-                                "url" : "{:url('cate/content')}",
+                                "url" : "{:url('link/content')}",
                                 "targetElem" : "#content",
-                                "formElem" : "#cate_form",
+                                "formElem" : "#link_form",
                                 "pageCountElem" : "#page-count"
                             };
                             parent.list(obj);
