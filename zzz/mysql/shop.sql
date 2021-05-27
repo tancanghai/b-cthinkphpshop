@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 21/05/2021 00:54:29
+ Date: 28/05/2021 03:26:24
 */
 
 SET NAMES utf8mb4;
@@ -23,7 +23,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `tps_article`;
 CREATE TABLE `tps_article`  (
   `article_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '文章id',
-  `cate_id` smallint(10) NOT NULL COMMENT '栏目ID',
+  `cate_id` int(11) DEFAULT NULL COMMENT '栏目ID',
   `title` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '标题',
   `author` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '作者',
   `keywords` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '关键词',
@@ -39,7 +39,9 @@ CREATE TABLE `tps_article`  (
   `update_time` int(10) DEFAULT NULL,
   PRIMARY KEY (`article_id`) USING BTREE,
   INDEX `title`(`title`) USING BTREE,
-  INDEX `keywords`(`keywords`) USING BTREE
+  INDEX `keywords`(`keywords`) USING BTREE,
+  INDEX `cate_id`(`cate_id`) USING BTREE,
+  CONSTRAINT `cate_id` FOREIGN KEY (`cate_id`) REFERENCES `tps_cate` (`cate_id`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
@@ -84,8 +86,11 @@ CREATE TABLE `tps_cate`  (
   `pid` smallint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '上级id',
   `create_time` int(10) DEFAULT NULL,
   `update_time` int(10) DEFAULT NULL,
-  PRIMARY KEY (`cate_id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  PRIMARY KEY (`cate_id`) USING BTREE,
+  INDEX `cate_name`(`cate_name`) USING BTREE,
+  INDEX `keywords`(`keywords`) USING BTREE,
+  INDEX `pid`(`pid`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of tps_cate
@@ -96,5 +101,26 @@ INSERT INTO `tps_cate` VALUES (7, '网店帮助', '网店帮助', '网店帮助'
 INSERT INTO `tps_cate` VALUES (8, '普通分类', '普通分类', '普通分类', 1, NULL, 0, 1613100692, 1613101593);
 INSERT INTO `tps_cate` VALUES (9, '系统子分类1', '系统子分类1关键词', 'miaoshu', 1, NULL, 5, 1613123938, 1613123938);
 INSERT INTO `tps_cate` VALUES (10, '系统子分类11', '系统子分类11', '描述', 1, NULL, 9, 1613698081, 1613698081);
+
+-- ----------------------------
+-- Table structure for tps_link
+-- ----------------------------
+DROP TABLE IF EXISTS `tps_link`;
+CREATE TABLE `tps_link`  (
+  `link_id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `title` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '标题',
+  `link_url` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '链接地址',
+  `logo` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT 'logo',
+  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '描述',
+  `type` tinyint(1) NOT NULL DEFAULT 1 COMMENT '类别 1文字链接 2图片链接',
+  `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '状态 1 不使用 2使用',
+  PRIMARY KEY (`link_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '友情链接' ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of tps_link
+-- ----------------------------
+INSERT INTO `tps_link` VALUES (1, '标题', 'www.baidu.com', 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3681880960,455182084&fm=26&gp=0.jpg', 'miaoshu1', 1, 2);
+INSERT INTO `tps_link` VALUES (4, '系统分类文章11', 'www.11.com', '[object FileList]', 'yyy5', 2, 2);
 
 SET FOREIGN_KEY_CHECKS = 1;
