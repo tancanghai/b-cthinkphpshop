@@ -59,17 +59,8 @@ class LinkModel extends Model
      * @throws \think\exception\DbException
      * @throws \think\db\exception\DataNotFoundException
      */
-    function get_id_data($id){
+    public  function get_id_data($id){
         return Db::table($this->table)->where('link_id',$id)->find();
-    }
-
-    /**
-     * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
-     * @throws \think\db\exception\DataNotFoundException
-     */
-    function get_pid_data($id){
-        return Db::table($this->table)->where('pid',$id)->find();
     }
 
     public function save_link_model($data)

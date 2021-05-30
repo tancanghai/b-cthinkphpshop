@@ -89,7 +89,6 @@
 </div>
 <script src="__STATIC__/js/validation/bootstrapvalidator.js"></script>
 <!--Basic Scripts-->
-<script src="__STATIC__/js/jquery.serializejson.min.js" type="text/javascript" ></script>
 <script src="__STATIC__/js/bootstrap.min.js"></script>
 <script src="__STATIC__/js/slimscroll/jquery.slimscroll.min.js"></script>
 
@@ -136,23 +135,12 @@
                 },
             }
         });
-
+//文件上传传参方式 ajax
         $("#submit").on("click", function(){
             let bootstrapValidator = $("#togglingForm").data('bootstrapValidator');
             bootstrapValidator.validate();
             if(bootstrapValidator.isValid()){
-                // let thisData= $("#togglingForm").serializeJSON();
-                // let id = "{$link_data.link_id}";
-                // console.log($("#logo")[0].files);
-                // var form=document.querySelector("#togglingForm");
-                // //将获得的表单元素作为参数，对formData进行初始化
-                // var formdata=new FormData(form);
-                // //通过get方法获得name为advName元素的value值
-                // console.log(formdata.get("title"));//xixi
-                // //通过get方法获得name为advType元素的value值
-                // console.log(formdata.get("link_url"));//1
-                // formdata.append("logo",[0]);
-                let formDatas=getFormData("#togglingForm",$("#image_uploads")[0].files,"logo");
+                let formDatas=getFormData("#togglingForm",$("#image_uploads")[0].files);
                 $.ajax({
                     url: "{:url('link/save_link_edit')}",
                     type: 'post',
@@ -186,30 +174,6 @@
                         }
                     }
                 });
-
-                // $.post("{:url('link/save_link_edit')}", {"data":thisData,"id":id,"logo":1}, function (callback) {
-                //     if (callback.status == 1) {
-                //         layer.msg(callback.msg, {
-                //             icon: 1,
-                //             time: 1000
-                //         }, function(){
-                //             var indexs = parent.layer.getFrameIndex(window.name);//关闭当前iframe
-                //             parent.layer.close(indexs);
-                //             var obj={
-                //                 "offset" : 0,
-                //                 "num" : 10,
-                //                 "pagetouse" : true,
-                //                 "url" : "{:url('link/content')}",
-                //                 "targetElem" : "#content",
-                //                 "formElem" : "#link_form",
-                //                 "pageCountElem" : "#page-count"
-                //             };
-                //             parent.list(obj);
-                //         });
-                //     }else{
-                //         layer.msg(callback.msg, {time: 1000,icon: 2});
-                //     }
-                // }, "json");
             }
         });
 

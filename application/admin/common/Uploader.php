@@ -54,7 +54,7 @@ class Uploader
     }
 
     /**
-     * 保存ueditor上传的图片地址到对应的数据表json字段中
+     * 保存ueditor上传的图片地址到对应的数据表json字段中 单图片上传 修改的时候
      * @param $tableName 表名
      * @param $imgFieldName 图片字段名
      * @param $idFieldName id字段名
@@ -80,6 +80,24 @@ class Uploader
             $this->removeFile($file_url); //删除上传失败文件
             return false;
         }
+    }
+
+    //卑微小谭自定义封装多图上传后台处理函数；
+    public function upload_img_files(){
+        $imgPaths = array();
+        $files = request()->file('image');
+        foreach($files as $file){
+            // 移动到框架应用根目录/public/uploads/ 目录下
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+            if($info){
+                // 成功上传后 获取上传信息
+                $imgPaths[] = "/uploads/" . $info->getSaveName();
+            }else{
+                // 上传失败获取错误信息
+                echo $file->getError();
+            }
+        }
+        return json_encode($imgPaths);
     }
 
     //删除文件

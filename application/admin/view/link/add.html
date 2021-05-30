@@ -53,6 +53,17 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="image_uploads" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">logo</label>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="btn-box">
+                            <button id="btn">上传图片</button>
+                            <input type="file"  accept="image/*" id="image_uploads" onchange="handleFiles(this)">
+                        </div>
+                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" id="preview">
+                            No files currently selected for upload
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <label  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label no-padding-right">描述</label>
                         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                             <textarea class="form-control" rows="3" placeholder="描述" name="description"></textarea>
@@ -71,12 +82,12 @@
 </div>
 <script src="__STATIC__/js/validation/bootstrapvalidator.js"></script>
 <!--Basic Scripts-->
-<script src="__STATIC__/js/jquery.serializejson.min.js" type="text/javascript" ></script>
 <script src="__STATIC__/js/bootstrap.min.js"></script>
 <script src="__STATIC__/js/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!--Beyond Scripts-->
 <script src="__STATIC__/js/beyond.min.js"></script>
+<script src="__STATIC__/js/common/file-common.js"></script>
 <script>
     $(function () {
         layui.use(['layer', 'form',"laydate"], function(){
@@ -122,30 +133,40 @@
             let bootstrapValidator = $("#togglingForm").data('bootstrapValidator');
             bootstrapValidator.validate();
             if(bootstrapValidator.isValid()){
-                let thisData= $("#togglingForm").serializeJSON();
-                $.post("{:url('link/save_link_add')}", thisData, function (callback) {
-                    if (callback.status == 1) {
-                        layer.msg(callback.msg, {
-                            icon: 1,
-                            time: 1000
-                        }, function(){
-                            var indexs = parent.layer.getFrameIndex(window.name);//关闭当前iframe
-                            parent.layer.close(indexs);
-                            var obj={
-                                "offset" : 0,
-                                "num" : 10,
-                                "pagetouse" : true,
-                                "url" : "{:url('link/content')}",
-                                "targetElem" : "#content",
-                                "formElem" : "#link_form",
-                                "pageCountElem" : "#page-count"
-                            };
-                            parent.list(obj);
-                        });
-                    }else{
-                        layer.msg(callback.msg, {time: 1000,icon: 2});
+                let formDatas=getFormData("#togglingForm",$("#image_uploads")[0].files);
+                $.ajax({
+                    url: "{:url('link/save_link_add')}",
+                    type: 'post',
+                    data: formDatas,
+                    dataType: 'json',
+                    async: false,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (callback) {
+                        if (callback.status == 1) {
+                            layer.msg(callback.msg, {
+                                icon: 1,
+                                time: 1000
+                            }, function(){
+                                let indexs = parent.layer.getFrameIndex(window.name);//关闭当前iframe
+                                parent.layer.close(indexs);
+                                let obj={
+                                    "offset" : 0,
+                                    "num" : 10,
+                                    "pagetouse" : true,
+                                    "url" : "{:url('link/content')}",
+                                    "targetElem" : "#content",
+                                    "formElem" : "#link_form",
+                                    "pageCountElem" : "#page-count"
+                                };
+                                parent.list(obj);
+                            });
+                        }else{
+                            layer.msg(callback.msg, {time: 1000,icon: 2});
+                        }
                     }
-                }, "json");
+                });
             }
         });
 

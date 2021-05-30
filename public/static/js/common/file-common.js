@@ -21,7 +21,14 @@
 const fileTypes = [
     'image/jpeg',
     'image/pjpeg',
-    'image/png'
+    'image/png',
+    'image/jpg',
+    'image/png',
+    'image/gif',
+    'image/svg',
+    'image/psd',
+    'image/swf',
+    'image/bmp'
 ];
 //验证图片类型函数
 function validFileType(file) {
@@ -82,7 +89,7 @@ function getObjectURL(file) {
 //formElement ： form表单元素 例如："#togglingForm",
 // files： input的文件对象
 //inputName  字段名
-function getFormData(formElement,files,inputName){
+function getFormData(formElement,files){
     let form=document.querySelector(formElement);
     //将获得的表单元素作为参数，对formData进行初始化
     let formData=new FormData(form);

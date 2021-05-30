@@ -5,13 +5,14 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Config;
 use app\admin\model\LinkModel;
+use app\admin\common\Uploader;
 
 class Link extends Controller
 {
     public function _initialize()
     {
         $model = new LinkModel;
-        $this->model=$model;
+        $this->model = $model;
     }
 
     public function lists()
@@ -25,19 +26,34 @@ class Link extends Controller
         Config::set('default_ajax_return', 'html');
         if (request()->isPost()) {
             $data = input('post.');
-            $datas = $this->model->get_content($data["param_data"],$data["offset"],$data["num"]);
+            $datas = $this->model->get_content($data["param_data"], $data["offset"], $data["num"]);
+            foreach ($datas as $k=>$v){
+                if($v["logo"]){
+                    $v["logo"]= (json_decode($v["logo"],true))[0];
+                }
+                $datas[$k]=$v;
+            }
             $counts = $this->model->get_content_count($data["param_data"]);
-            return $this->fetch("content",[
-                "datas"=>$datas,
-                "count"=>$counts[0]["count"]
+            return $this->fetch("content", [
+                "datas" => $datas,
+                "count" => $counts[0]["count"]
             ]);
         }
     }
 
-    public function delete(){
+    public function delete()
+    {
         if (request()->isPost()) {
             $id = input('post.id');
-            $rs=$this->model->where('link_id',$id)->delete();
+            $link_data = $this->model->get_id_data($id);
+            if ($link_data["logo"]) {
+                $logos = json_decode($link_data["logo"], true);
+                $Uploader = new Uploader();
+                foreach ($logos as $value) {
+                    $Uploader->removeFile($value);
+                }
+            }
+            $rs = $this->model->where('link_id', $id)->delete();
             if ($rs) {
                 return ['status' => 1, 'msg' => '删除成功'];
             } else {
@@ -57,6 +73,8 @@ class Link extends Controller
     {
         if (request()->isPost()) {
             $data = input('post.');
+            $imgPaths = (new Uploader())->upload_img_files();
+            $data["logo"] = $imgPaths;
             $bool = $this->model->save_link_model($data);
             if ($bool) {
                 return ['status' => 1, 'msg' => '保存成功'];
@@ -69,9 +87,12 @@ class Link extends Controller
     public function edit($id)
     {
         Config::set('default_ajax_return', 'html');
-        $datas = $this->model->get_content(["link_id"=>$id]);
-        return $this->fetch("edit",[
-            "link_data"=>$datas[0]
+        $datas = $this->model->get_id_data($id);
+        if($datas["logo"]){
+            $datas["logo"]= (json_decode($datas["logo"],true))[0];
+        }
+        return $this->fetch("edit", [
+            "link_data" => $datas
         ]);
     }
 
@@ -79,25 +100,19 @@ class Link extends Controller
     {
         if (request()->isPost()) {
             $data = input('post.');
-            $id=$data["link_id"];
-//            $logo=$data["logo"];
-            $bool = $this->model->update_link_model($data,$id);
-            $files = request()->file('image');
-            foreach($files as $file){
-                // 移动到框架应用根目录/public/uploads/ 目录下
-                $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
-                if($info){
-                    // 成功上传后 获取上传信息
-                    // 输出 jpg
-                    echo $info->getExtension();
-                    // 输出 42a79759f284b767dfcb2a0197904287.jpg
-                    echo $info->getFilename();
-                }else{
-                    // 上传失败获取错误信息
-                    echo $file->getError();
+            $id = $data["link_id"];
+
+            $link_data = $this->model->get_id_data($id);
+            if ($link_data["logo"]) {
+                $logos = json_decode($link_data["logo"], true);
+                $Uploader = new Uploader();
+                foreach ($logos as $value) {
+                    $Uploader->removeFile($value);
                 }
             }
-
+            $imgPaths = (new Uploader())->upload_img_files();
+            $data["logo"] = $imgPaths;
+            $bool = $this->model->update_link_model($data, $id);
             if ($bool) {
                 return ['status' => 1, 'msg' => '更新成功'];
             } else {
